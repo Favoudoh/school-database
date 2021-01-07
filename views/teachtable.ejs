@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/teachtable.css" type="text/css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>address</th>
+            <th>age</th>
+            <th>staffid</th>
+            <th>actions</th>
+        </tr>
+        <%teachers.forEach((teacher)=>{%>
+            <tr>
+                <td><%= teacher._id %></td>
+                <td><%= teacher.name %></td>
+                <td><%= teacher.address %></td>
+                <td><%= teacher.age %></td>
+                <td><%= teacher.staffid %></td>
+                <td>
+                    <a href="/teachers/teacher/<%= teacher._id %>">delete</a>
+                    <a href="/teachers/teacher/<%= teacher._id %>/edit">edit</a>
+                </td>
+            </tr>
+        <%})%>
+    </table>
+    
+</body>
+</html>

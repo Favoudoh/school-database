@@ -1,0 +1,75 @@
+/* *{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:0;
+    box-sizing: border-box; */
+/* }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+
+} */
+body{
+    width: 50%;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient( #a4e6a9,#20bdff,#5433ff);
+    border-radius: 6px;
+    height: 735px;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bolder;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+p1 {
+    font-weight: bolder;
+}
+
+.all{
+    margin: auto;
+    position: absolute;
+    color: honeydew;
+    text-align: center;
+    border: 2px solid rgba(113, 199, 1, 0.418);
+    background: linear-gradient(rgba(0, 47, 255, 0.555),rgba(255, 255, 255, 0.418));
+    border-radius: 40px;
+    width:50%;
+    height: 60%;
+    top :20%;
+    left: 28%;
+}
+
+input[type = "button"]{
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid greenyellow;
+    margin-top: 5%;
+    font-size: medium;
+    font-weight: bolder;
+    color:white;
+    background-color: rgb(73, 76, 230);
+}
+input[type="button"]:hover{
+    background-color:rgb(229, 255, 0);
+    color: rgb(117, 117, 117);
+    }
+
+.student{
+    align-self: flex-start;
+  
+}
+.teacher{
+    align-self: center;
+}
+.sub{
+align-self: flex-end;
+}
+

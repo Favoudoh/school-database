@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/subtable.css" type="text/css">
+</head>
+<body>
+    <table>
+     <tr>
+         <th>id</th>
+         <th>subject</th>
+         <th>teacher</th>
+         <th>venue</th>
+         <th>creditunit</th>
+         <th>actions</th>
+     </tr>
+     <%subjectsss.forEach((subjectss)=>{%>
+        <tr>
+            <td><%= subjectss._id %></td>
+            <td><%= subjectss.subject %></td>
+            <td><%= subjectss.teacher %></td>
+            <td><%= subjectss.venue %></td>
+            <td><%= subjectss.creditUnit %></td>
+            <td>
+                <a href="/subjects/subject/<%= subjectss._id %>">delete</a>
+                <a href="/subjects/subject/<%= subjectss._id %>/edit">Edit</a>
+            </td>
+        </tr>
+    <%})%>
+    </table>
+</body>
+</html>
